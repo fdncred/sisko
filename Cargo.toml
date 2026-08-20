@@ -27,5 +27,8 @@ nu-parser = "0.115"
 nu-protocol = { version = "0.115", features = ["sqlite"] }
 nu-utils = "0.115"
 
-[profile.dev.package."*"]
+[profile.dev]
+opt-level = 1
+
+[profile.release]
 opt-level = 3
